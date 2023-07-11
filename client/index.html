@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <title>Document</title>
+    <style>
+        /* Estilos personalizados */
+        .navbar-custom {
+            background-color: blue; /* Cambiar a color azul */
+        }
+        .navbar-custom .navbar-brand img {
+            max-width: 100px; /* Tamaño máximo de la imagen del logo */
+            height: auto; /* Ajuste de altura automático */
+        }
+    </style>
+</head> 
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary navbar-custom"> <!-- Cambiar bg-dark por bg-primary -->
+        <a class="navbar-brand" href="#"><img src="/client/images/chandra-low.png" alt="Chandra"></a> <!-- Asegurarse de proporcionar la ruta correcta de la imagen -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" >
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" >Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!--shop content-->
+    <div class="card-products-container">
+        <div class="card-products" id="shopContent"></div>
+    </div>
+    <!--cart btn-->
+    <div class="cart-btn" id="cart-btn">🛒</div>
+
+    <!--cart counter-->
+    <span class="cart-counter" id="cart-counter">0</span>
+
+    <!--modal-->
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-container" id="modal-container"></div>
+
+    <script src="js/products.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
